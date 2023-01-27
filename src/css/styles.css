@@ -44,8 +44,21 @@ body {
     overscroll-behavior-x: contain;
     scroll-snap-type: x proximity;
   }
-
+  .img-container img {
+    width: 0px;
+    flex-grow: 1;
+    object-fit: cover;
+    opacity: .8;
+    transition: .5s ease;
+  }
   
+  .img-container img:hover {
+    cursor: crosshair;
+    width: 150px;
+    opacity: 1;
+    filter: contrast(120%);
+  }
+
   main span {
     text-align: center;
   }
